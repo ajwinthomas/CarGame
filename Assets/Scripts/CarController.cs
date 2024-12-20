@@ -15,6 +15,7 @@ public class CarController : MonoBehaviour
     {
         public GameObject wheelModel;
         public WheelCollider wheelCollider;
+        public GameObject wheelEffectObj; 
         public Axel axel;
     }
 
@@ -42,6 +43,7 @@ public class CarController : MonoBehaviour
     {
         GetInputs();
         AnimateWheels();
+        WheelEffects();
     }
     void LateUpdate()
     {
@@ -104,6 +106,21 @@ public class CarController : MonoBehaviour
             wheel.wheelModel.transform.position = pos;
             wheel.wheelModel.transform.rotation = rot;
 
+        }
+    }
+
+    void WheelEffects()
+    {
+        foreach(var wheel in Wheels)
+        {
+            if (Input.GetKey(KeyCode.Space) && wheel.axel == Axel.Rear)
+            {
+                wheel.wheelEffectObj.GetComponentInChildren<TrailRenderer>().emitting = true;
+            }
+            else
+            {
+                wheel.wheelEffectObj.GetComponentInChildren<TrailRenderer>().emitting = false;
+            }
         }
     }
 }
