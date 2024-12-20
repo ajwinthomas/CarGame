@@ -41,6 +41,7 @@ public class CarController : MonoBehaviour
     void Update()
     {
         GetInputs();
+        AnimateWheels();
     }
     void LateUpdate()
     {
@@ -71,6 +72,19 @@ public class CarController : MonoBehaviour
                 var   _steerAngle = steerInput * turnSensitivity * maxSteerAngle;
                 wheel.wheelCollider.steerAngle = Mathf.Lerp(wheel.wheelCollider.steerAngle, _steerAngle, 0.6f);
             }
+        }
+    }
+
+    void AnimateWheels()
+    {
+        foreach(var wheel in Wheels)
+        {
+            Quaternion rot;
+            Vector3 pos;
+            wheel.wheelCollider.GetWorldPose(out pos, out rot);
+            wheel.wheelModel.transform.position = pos;
+            wheel.wheelModel.transform.rotation = rot;
+
         }
     }
 }
