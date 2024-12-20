@@ -47,6 +47,7 @@ public class CarController : MonoBehaviour
     {
         Move();
         Steer();
+        Brake();
     }
 
     void GetInputs()
@@ -71,6 +72,24 @@ public class CarController : MonoBehaviour
             {
                 var   _steerAngle = steerInput * turnSensitivity * maxSteerAngle;
                 wheel.wheelCollider.steerAngle = Mathf.Lerp(wheel.wheelCollider.steerAngle, _steerAngle, 0.6f);
+            }
+        }
+    }
+
+    void Brake()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            foreach(var wheel in Wheels)
+            {
+                wheel.wheelCollider.brakeTorque = 300 * brakeAceleration * Time.deltaTime;
+            }
+        }
+        else
+        {
+            foreach (var wheel in Wheels)
+            {
+                wheel.wheelCollider.brakeTorque = 0;
             }
         }
     }
