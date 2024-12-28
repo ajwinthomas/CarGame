@@ -12,11 +12,11 @@ public class CarLights : MonoBehaviour
     public  struct Light
     {
         public GameObject lightObj;
-        public Material lightMat;
+       
         public Side side;
     }
 
-    public Toggle lightToggle;
+    //public Toggle lightToggle;
 
     public bool isFrontLightOn;
     public bool isBackLightOn;
@@ -25,7 +25,7 @@ public class CarLights : MonoBehaviour
 
     void Start()
     {
-        isFrontLightOn = lightToggle.isOn;
+        //isFrontLightOn = lightToggle.isOn;
         isBackLightOn = false;
     }
 
@@ -43,7 +43,7 @@ public class CarLights : MonoBehaviour
                     light.lightObj.SetActive(true);
                 }
             }
-            lightToggle.gameObject.GetComponent<Image>().color = Color.yellow;
+            //lightToggle.gameObject.GetComponent<Image>().color = Color.yellow;
         }
         else
         {
@@ -55,7 +55,7 @@ public class CarLights : MonoBehaviour
                     light.lightObj.SetActive(false);
                 }
             }
-            lightToggle.gameObject.GetComponent<Image>().color = Color.white;
+            //ightToggle.gameObject.GetComponent<Image>().color = Color.white;
         }
     }
 
@@ -72,7 +72,7 @@ public class CarLights : MonoBehaviour
                     light.lightObj.SetActive(true);
                 }
             }
-            lightToggle.gameObject.GetComponent<Image>().color = Color.yellow;
+            //lightToggle.gameObject.GetComponent<Image>().color = Color.yellow;
         }
         else
         {
@@ -84,7 +84,7 @@ public class CarLights : MonoBehaviour
                     light.lightObj.SetActive(false);
                 }
             }
-            lightToggle.gameObject.GetComponent<Image>().color = Color.white;
+           // lightToggle.gameObject.GetComponent<Image>().color = Color.white;
         }
     }
 }
