@@ -255,7 +255,6 @@ GameObject:
   - component: {fileID: 9214195779366268581}
   - component: {fileID: 3744002596896527806}
   - component: {fileID: 9133900735541270952}
-  - component: {fileID: 66854732859464977}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -482,21 +481,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &66854732859464977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721749544639704648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445681053306fba4698a5e40ac907805, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parkingSpot: {fileID: 0}
-  positionTolerance: 1
-  rotationTolerance: 10
 --- !u!1 &1926247343525446133
 GameObject:
   m_ObjectHideFlags: 0
