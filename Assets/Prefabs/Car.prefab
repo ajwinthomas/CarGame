@@ -255,9 +255,10 @@ GameObject:
   - component: {fileID: 9214195779366268581}
   - component: {fileID: 3744002596896527806}
   - component: {fileID: 9133900735541270952}
+  - component: {fileID: 66854732859464977}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,10 +271,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721749544639704648}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2091906453914397511}
   - {fileID: 8701116967285084626}
@@ -373,21 +374,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc3e69917801af44b53517608168750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightToggle: {fileID: 0}
   isFrontLightOn: 0
   isBackLightOn: 0
   lights:
   - lightObj: {fileID: 8058756501351548322}
-    lightMat: {fileID: 0}
     side: 0
   - lightObj: {fileID: 7844173853538516805}
-    lightMat: {fileID: 0}
     side: 0
   - lightObj: {fileID: 7151128414023437552}
-    lightMat: {fileID: 0}
     side: 1
   - lightObj: {fileID: 3486419710755886680}
-    lightMat: {fileID: 0}
     side: 1
 --- !u!82 &9133900735541270952
 AudioSource:
@@ -486,6 +482,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &66854732859464977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721749544639704648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445681053306fba4698a5e40ac907805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingSpot: {fileID: 0}
+  positionTolerance: 1
+  rotationTolerance: 10
 --- !u!1 &1926247343525446133
 GameObject:
   m_ObjectHideFlags: 0

@@ -55811,21 +55811,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66854732859464977, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
+      propertyPath: parkingSpot
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1721749544639704648, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
-    - target: {fileID: 8164311080907095146, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164311080907095146, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8164311080907095146, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
+    - target: {fileID: 4973104863978446976, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164311080907095146, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55867,14 +55863,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8164311080907095146, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 66854732859464977, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1721749544639704648, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120605678}
   m_SourcePrefab: {fileID: 100100000, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
 --- !u!4 &1544025582 stripped
 Transform:
@@ -76573,6 +76569,32 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fa854a4fa7fb0b04a93f71178fcc44a7, type: 3}
+--- !u!1 &2120605670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1721749544639704648, guid: 5fc82afbf02c39c469d61a399ca7f5b6, type: 3}
+  m_PrefabInstance: {fileID: 1544025581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2120605678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120605670}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5095323, y: 0.72581905, z: 0.040583245}
+  m_Center: {x: 0.0059236474, y: 0.53737813, z: 2.465017}
 --- !u!1 &2120735248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
