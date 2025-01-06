@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1987814901560157203}
   - component: {fileID: 3186851490324523958}
   - component: {fileID: 854856831555035004}
-  - component: {fileID: 7034377878011934389}
   - component: {fileID: 934204901914851769}
+  - component: {fileID: 1915529409178887630}
   m_Layer: 0
   m_Name: Fuel Tank
   m_TagString: FuelCan
@@ -88,19 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7034377878011934389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215395421967941289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d03e4fe6701574e4b850e36ed9edab33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  refillAmount: 50
 --- !u!65 &934204901914851769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122,3 +109,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13016868, y: 0.38988987, z: 0.2832769}
   m_Center: {x: -0.0126761645, y: 0.19603188, z: 0}
+--- !u!114 &1915529409178887630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215395421967941289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e92073b298d50146baa7bc8fab50614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

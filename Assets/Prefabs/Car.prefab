@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 9214195779366268581}
   - component: {fileID: 3744002596896527806}
   - component: {fileID: 9133900735541270952}
+  - component: {fileID: 701413691570327214}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -306,7 +307,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &7694719923839984095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,6 +482,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &701413691570327214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721749544639704648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e114dbafdb1a7041a564b65744b589f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxFuel: 100
+  fuelConsumptionRate: 1
+  fuelGainAmount: 20
+  fuelBar: {fileID: 0}
+  fillImage: {fileID: 0}
+  fullFuelColor: {r: 0, g: 1, b: 0, a: 1}
+  mediumFuelColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  lowFuelColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1926247343525446133
 GameObject:
   m_ObjectHideFlags: 0
